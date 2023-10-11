@@ -17,3 +17,29 @@ Route::get('/', function () {
     $hello = "Hello World";
     return view('home', compact('hello'));
 })->name('homepage');
+
+Route::get('/first-page', function () {
+
+    $prints = [
+        "First-",
+        "page-",
+        "in-",
+        "Laravel"
+    ];
+
+    return view('partials.first-page', compact('prints'));
+})->name('prima-pagina');
+
+Route::get('/students', function () {
+    $title = 'Elenco studenti';
+    $list_students = [
+
+        "Andrea",
+        "Marco",
+        "Stefano",
+        "Francesco"
+    ];
+
+    return view('partials.students', compact('title', 'list_students'));
+
+})->name('elenco-studenti');
