@@ -1,9 +1,14 @@
-<!DOCTYPE html> <html lang="en"> <head> @include('partials.head') </head>
+<!DOCTYPE html> 
 
-<header> @include('partials.header') </header>
+<html lang="en"> 
+
+    <head> @include('partials.head') </head>
 
     <body>
-        <div class="container">
+
+        <header> @include('partials.header') </header>
+
+        <div class="container mt-5">
             <h1>{{ $title }}</h1>
 
             <ul>

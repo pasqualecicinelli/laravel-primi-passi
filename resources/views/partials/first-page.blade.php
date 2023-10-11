@@ -2,9 +2,12 @@
 <html lang="en">
 
 <head> @include('partials.head') </head>
-<header> @include('partials.header') </header>
+
 
 <body>
+
+    <header> @include('partials.header') </header>
+    
     <div class="container mt-5">
         <ul class="d-flex"> @forelse ($prints as $print)
 
